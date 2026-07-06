@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { Briefcase, Eye, EyeOff, Mail, Lock, User, ArrowRight, CheckCircle2 } from "lucide-react";
+import ashiq from "../../assets/ashiq.jpeg";
 
 export default function Register() {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", password: "", role: "candidate" });
   const [showPw, setShowPw] = useState(false);
   const [loading, setLoading] = useState(false);
-
+ 
   const update = (k: string) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
@@ -59,11 +60,11 @@ export default function Register() {
           </p>
           <div className="flex items-center gap-3 mt-3">
             <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=32&h=32&fit=crop&auto=format"
-              alt="Sarah"
+              src={ashiq}
+              alt="Ashiqul"
               className="w-8 h-8 rounded-full"
             />
-            <p className="text-white text-xs font-medium">Sarah Chen, Senior Engineer at Stripe</p>
+            <p className="text-white text-xs font-medium">Ashiqul Islam, Senior Engineer at Stripe</p>
           </div>
         </div>
       </div>
@@ -119,7 +120,7 @@ export default function Register() {
                   type="text"
                   value={form.name}
                   onChange={update("name")}
-                  placeholder="Alex Morgan"
+                  placeholder="Ashiqul Islam"
                   className="w-full pl-10 pr-4 py-3 text-sm border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-input-background"
                 />
               </div>
@@ -132,7 +133,7 @@ export default function Register() {
                   type="email"
                   value={form.email}
                   onChange={update("email")}
-                  placeholder="you@example.com"
+                  placeholder="you@gmail.com"
                   className="w-full pl-10 pr-4 py-3 text-sm border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-input-background"
                 />
               </div>
