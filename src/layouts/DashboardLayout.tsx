@@ -10,6 +10,7 @@ import {
   FileText,
   ChevronRight,
 } from "lucide-react";
+import ashiq from "../assets/ashiq.jpeg";
 
 const sidebarNav = [
   { label: "Overview", href: "/dashboard", icon: LayoutDashboard, exact: true },
@@ -32,7 +33,7 @@ export default function DashboardLayout() {
           {/* User card */}
           <div className="bg-white rounded-xl border border-border p-4 mb-4 flex items-center gap-3">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&auto=format"
+              src={ashiq}
               alt="User"
               className="w-10 h-10 rounded-full object-cover flex-shrink-0"
             />

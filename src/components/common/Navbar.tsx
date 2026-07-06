@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
 import { Menu, X, Briefcase, Bell, ChevronDown, User, LayoutDashboard, LogOut, Bookmark } from "lucide-react";
+import ashiq from "../../assets/ashiq.jpeg";
 
 const navLinks = [
   { label: "Find Jobs", href: "/jobs" },
@@ -67,11 +68,11 @@ export default function Navbar() {
                     className="flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-lg hover:bg-muted transition-colors"
                   >
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&auto=format"
+                      src={ashiq}
                       alt="User avatar"
                       className="w-7 h-7 rounded-full object-cover"
                     />
-                    <span className="text-sm font-medium text-foreground">Alex Morgan</span>
+                    <span className="text-sm font-medium text-foreground">Ashiql Islam</span>
                     <ChevronDown size={14} className="text-muted-foreground" />
                   </button>
                   {userMenuOpen && (

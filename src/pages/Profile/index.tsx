@@ -13,7 +13,9 @@ import {
   Edit3,
   Download,
   BadgeCheck,
+  Facebook,
 } from "lucide-react";
+import ashiq from "../../assets/ashiq.jpeg";
 
 export default function Profile() {
   const skills = ["React", "TypeScript", "Node.js", "GraphQL", "Tailwind CSS", "PostgreSQL", "Docker", "AWS"];
@@ -28,7 +30,7 @@ export default function Profile() {
           <div className="flex items-end justify-between -mt-10 mb-5">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format"
+                src={ashiq}
                 alt="Alex Morgan"
                 className="w-20 h-20 rounded-2xl border-4 border-white object-cover shadow-md"
               />
@@ -52,19 +54,19 @@ export default function Profile() {
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
             <div>
               <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
-                Alex Morgan
+                Ashiql islam
                 <BadgeCheck size={18} className="text-primary" />
               </h1>
-              <p className="text-muted-foreground mt-0.5">Senior Frontend Engineer</p>
+              <p className="text-muted-foreground mt-0.5">Senior Full Stack Developer</p>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-3 text-sm text-muted-foreground">
-                <span className="flex items-center gap-1.5"><MapPin size={13} /> San Francisco, CA</span>
-                <span className="flex items-center gap-1.5"><Mail size={13} /> alex@example.com</span>
-                <span className="flex items-center gap-1.5"><Phone size={13} /> +1 (415) 555-0192</span>
+                <span className="flex items-center gap-1.5"><MapPin size={13} /> Dhaka, Bangladesh</span>
+                <span className="flex items-center gap-1.5"><Mail size={13} /> ashiquldeveloper11@gmail.com</span>
+                <span className="flex items-center gap-1.5"><Phone size={13} /> +880 1618 532116</span>
               </div>
             </div>
             <div className="flex items-center gap-2">
-              {[{ icon: Linkedin, label: "LinkedIn" }, { icon: Github, label: "GitHub" }, { icon: Twitter, label: "Twitter" }, { icon: Globe, label: "Website" }].map(({ icon: Icon, label }) => (
-                <a key={label} href="#" aria-label={label} className="w-9 h-9 rounded-xl border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors">
+              {[{ icon: Linkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/ashiqulislam290/" }, { icon: Github, label: "GitHub", link: "https://github.com/ashiqul290" }, { icon: Facebook, label: "Facebook", link: "https://www.facebook.com/ashiqulislam290" }, { icon: Globe, label: "Website", link: "https://ashiqul.vercel.app/" }].map(({ icon: Icon, label, link }) => (
+                <a key={label} href={link} aria-label={label} className="w-9 h-9 rounded-xl border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors">
                   <Icon size={15} />
                 </a>
               ))}
