@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { Camera, Plus, X, Save, ArrowLeft } from "lucide-react";
+import ashiq from "../../assets/ashiq.jpeg";
 
 export default function EditProfile() {
   const [skills, setSkills] = useState(["React", "TypeScript", "Node.js", "GraphQL", "Tailwind CSS"]);
@@ -83,7 +84,7 @@ export default function EditProfile() {
         <div className="flex items-center gap-5">
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format"
+              src={ashiq}
               alt="Profile"
               className="w-20 h-20 rounded-2xl object-cover border-2 border-border"
             />
@@ -105,12 +106,12 @@ export default function EditProfile() {
       <div className="bg-white rounded-xl border border-border p-5">
         <h2 className="font-semibold text-foreground mb-4">Basic Information</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Field label="First Name" placeholder="Alex" defaultValue="Alex" required />
-          <Field label="Last Name" placeholder="Morgan" defaultValue="Morgan" required />
+          <Field label="First Name" placeholder="Ashiqul" defaultValue="Ashiqul" required />
+          <Field label="Last Name" placeholder="Islam" defaultValue="Islam" required />
           <Field label="Job Title / Headline" placeholder="Senior Frontend Engineer" defaultValue="Senior Frontend Engineer" required />
           <Field label="Location" placeholder="San Francisco, CA" defaultValue="San Francisco, CA" />
-          <Field label="Email Address" type="email" placeholder="alex@example.com" defaultValue="alex@example.com" required />
-          <Field label="Phone Number" type="tel" placeholder="+1 (415) 555-0192" defaultValue="+1 (415) 555-0192" />
+          <Field label="Email Address" type="email" placeholder="ashiquldeveloper11@gmail.com" defaultValue="ashiquldeveloper11@gmail.com" required />
+          <Field label="Phone Number" type="tel" placeholder="+8801234567890" defaultValue="+8801234567890" />
           <div className="sm:col-span-2">
             <Field label="About / Bio" type="textarea" placeholder="Tell employers about yourself..." defaultValue="Senior Frontend Engineer with 6+ years of experience building high-performance web applications." />
           </div>

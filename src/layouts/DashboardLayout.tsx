@@ -38,8 +38,8 @@ export default function DashboardLayout() {
               className="w-10 h-10 rounded-full object-cover flex-shrink-0"
             />
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-foreground truncate">Alex Morgan</p>
-              <p className="text-xs text-muted-foreground truncate">alex@example.com</p>
+              <p className="text-sm font-semibold text-foreground truncate">Ashiql Islam</p>
+              <p className="text-xs text-muted-foreground truncate">ashiquldeveloper11@gmail.com</p>
             </div>
           </div>
 
