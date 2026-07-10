@@ -120,7 +120,7 @@ export default function Register() {
                   type="text"
                   value={form.name}
                   onChange={update("name")}
-                  placeholder="Ashiqul Islam"
+                  placeholder="Ashiqul Islam..."
                   className="w-full pl-10 pr-4 py-3 text-sm border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-input-background"
                 />
               </div>
@@ -146,7 +146,7 @@ export default function Register() {
                   type={showPw ? "text" : "password"}
                   value={form.password}
                   onChange={update("password")}
-                  placeholder="Min. 8 characters"
+                  placeholder="Min. 8 characters..."
                   className="w-full pl-10 pr-10 py-3 text-sm border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-input-background"
                 />
                 <button
