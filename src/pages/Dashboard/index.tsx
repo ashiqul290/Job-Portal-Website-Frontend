@@ -172,6 +172,8 @@ export default function Dashboard() {
         </div>
       </div>
 
+
+
       {/* Job Recommendations */}
       <div className="bg-white rounded-xl border border-border p-5">
         <div className="flex items-center justify-between mb-4">

@@ -58,7 +58,7 @@ export default function Home() {
             Today
           </h1>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Discover thousands of job opportunities from world-class companies. Your next career move is just a search
+            Discover thousands of job opportunities from world-class companies. Your next career move is just a searchs
             away.
           </p>
 
