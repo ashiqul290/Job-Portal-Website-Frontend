@@ -184,7 +184,7 @@ export default function Contact() {
                   </p>
                   <button
                     onClick={() => { setForm({ name: "", email: "", subject: "", message: "" }); setSubmitted(false); }}
-                    className="text-sm text-primary hover:underline"
+                    className="text-sm text-primary hover:underline "
                   >
                     Send another message
                   </button>

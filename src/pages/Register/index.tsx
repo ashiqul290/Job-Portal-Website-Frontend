@@ -11,7 +11,7 @@ export default function Register() {
  
   const update = (k: string) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((f) => ({ ...f, [k]: e.target.value }));
-
+ 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);

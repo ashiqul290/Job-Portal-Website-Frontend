@@ -167,7 +167,7 @@ export default function EditProfile() {
         <div className="border-2 border-dashed border-border rounded-xl p-8 text-center hover:border-primary/40 transition-colors cursor-pointer">
           <div className="text-3xl mb-3">📄</div>
           <p className="text-sm font-medium text-foreground mb-1">Alex_Morgan_Resume.pdf</p>
-          <p className="text-xs text-muted-foreground mb-4">Uploaded Jan 3, 2026 · 245 KB</p>
+          <p className="text-xs text-muted-foreground mb-4">Uploaded Jan 3, 2026 . 245 KB</p>
           <button className="text-sm font-medium text-primary border border-primary/40 px-4 py-2 rounded-xl hover:bg-secondary transition-colors">
             Replace Resume
           </button>
